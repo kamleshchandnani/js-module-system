@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-kamlesh",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  }
+}

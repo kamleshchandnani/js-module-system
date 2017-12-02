@@ -1,0 +1,33 @@
+{
+  "window.zoomLevel": 0,
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.scss": "scss",
+    "*.ejs": "html"
+  },
+  "vsicons.projectDetection.disableDetect": true,
+  "editor.renderIndentGuides": true,
+  "editor.tabSize": 2,
+  "auto-close-tag.activationOnLanguage": ["*", "javascriptreact"],
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "git-commit": false,
+    "json": true,
+    "javascript": true,
+    "react": true,
+    "html": true
+  },
+  "editor.wordWrapColumn": 100,
+  "prettier.printWidth": 100,
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Material Theme",
+  "git.enableSmartCommit": true,
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true
+}

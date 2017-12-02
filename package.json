@@ -1,0 +1,48 @@
+{
+  "name": "js-module-system",
+  "version": "0.0.1",
+  "author": "Kamlesh Chandnani <kamlesh.chandnani@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/kamleshchandnani/js-module-system#readme",
+  "description": "Small UI library to demonstrate the JS module system",
+  "main": "dist/index.js",
+  "module": "lib/index.js",
+  "files": ["dist", "src", "lib/**/*"],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "run-s clean && run-p build:es build:cjs",
+    "build:es": "NODE_ENV=es rollup -c",
+    "build:cjs": "NODE_ENV=cjs rollup -c",
+    "build:lib": "BABEL_ENV=es babel src -d lib",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamleshchandnani/js-module-system.git"
+  },
+  "keywords": ["modules", "utils"],
+  "lint-staged": {
+    "*.js": ["eslint"]
+  },
+  "devDependencies": {
+    "//": "run with yarn -D -- for custom git packages",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-styled-components": "^1.3.0",
+    "babel-preset-kamlesh": "git+https://github.com/kamleshchandnani/babel-preset-kamlesh.git",
+    "eslint": "^4.11.0",
+    "eslint-config-kamlesh": "git+https://github.com/kamleshchandnani/eslint-config-kamlesh.git",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rollup": "^0.51.7",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "styled-components": "^2.2.4"
+  }
+}
