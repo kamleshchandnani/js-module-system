@@ -6,14 +6,14 @@
   "homepage": "https://github.com/kamleshchandnani/js-module-system#readme",
   "description": "Small UI library to demonstrate the JS module system",
   "main": "dist/index.js",
-  "module": "lib/index.js",
-  "files": ["dist", "src", "lib/**/*"],
+  "module": "dist/index.es.js",
+  "files": ["dist", "lib"],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "run-s clean && run-p build:es build:cjs",
+    "build": "run-s clean && run-p build:es build:cjs build:lib:es",
     "build:es": "NODE_ENV=es rollup -c",
     "build:cjs": "NODE_ENV=cjs rollup -c",
-    "build:lib": "BABEL_ENV=es babel src -d lib",
+    "build:lib:es": "BABEL_ENV=es babel src -d lib",
     "precommit": "lint-staged"
   },
   "repository": {

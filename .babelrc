@@ -3,7 +3,7 @@
     "es": {
       "presets": [
         [
-          "bizom",
+          "kamlesh",
           {
             "targets": {
               "browsers": ["last 2 Chrome versions", "safari >=11"]
@@ -18,7 +18,7 @@
     "cjs": {
       "presets": [
         [
-          "bizom",
+          "kamlesh",
           {
             "targets": {
               "browsers": ["last 2 Chrome versions", "safari >=11"]

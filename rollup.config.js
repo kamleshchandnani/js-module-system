@@ -15,7 +15,7 @@ export default {
     }[env],
     format: env
   },
-  external: ["moment"],
+  external: ["react", "styled-components"],
   plugins: [
     resolve(),
     babel({
