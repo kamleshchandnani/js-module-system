@@ -2,7 +2,7 @@
   "name": "js-module-system",
   "version": "0.0.1",
   "author": "Kamlesh Chandnani <kamlesh.chandnani@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/kamleshchandnani/js-module-system#readme",
   "description": "Small UI library to demonstrate the JS module system",
   "main": "dist/index.js",
